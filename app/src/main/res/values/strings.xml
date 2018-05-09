@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BTCell View</string>
+    <string name="radio_previous_day">Use Previous day</string>
+    <string name="radio_last_week">Use last week</string>
+    <string name="radio_forecast">Forecast</string>
+    <string name="radio_average">Last 4 days average</string>
+    <string name="radio_custom">Custom values</string>
+
+    <string name="insulin_prompt_nph">N</string>
+    <string name="insulin_prompt_r">R</string>
+    <string name="insulin_prompt_l">L</string>
+
+    <string-array name="insulin_amounts">
+        <item></item>
+        <item>0.5</item>
+        <item>1.0</item>
+        <item>1.5</item>
+        <item>2.0</item>
+        <item>2.5</item>
+        <item>3.0</item>
+        <item>3.5</item>
+        <item>4.0</item>
+        <item>4.5</item>
+        <item>5.0</item>
+        <item>5.5</item>
+        <item>6.0</item>
+        <item>6.5</item>
+        <item>7.0</item>
+        <item>7.5</item>
+        <item>8.0</item>
+        <item>8.5</item>
+        <item>9.0</item>
+        <item>9.5</item>
+    </string-array>
+
+</resources>

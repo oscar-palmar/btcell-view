@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="420dp"
+android:layout_height="wrap_content"
+android:gravity="center_horizontal"
+android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radioUseOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioUseYesterday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_previous_day"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioUseLastWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_last_week" />
+
+        <RadioButton
+            android:id="@+id/radioUseForecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_forecast" />
+
+        <RadioButton
+            android:id="@+id/radioUseAverge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_average" />
+
+        <RadioButton
+            android:id="@+id/radioUseCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_custom" />
+    </RadioGroup>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:text="@string/insulin_prompt_nph"
+            android:textStyle="bold"
+            android:textColor="#00ff00"
+            android:textIsSelectable="true" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/insulin_amounts"
+                android:prompt="@string/insulin_prompt_nph"
+                style="@android:style/Widget.Spinner"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:text="@string/insulin_prompt_r"
+                android:textStyle="bold"
+                android:textColor="#00ff00"
+                android:textIsSelectable="true" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/insulin_amounts"
+                android:prompt="@string/insulin_prompt_r"
+                style="@android:style/Widget.Spinner"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text3"
+                android:text="@string/insulin_prompt_l"
+                android:textStyle="bold"
+                android:textColor="#00ff00"
+                android:textIsSelectable="true" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/insulin_amounts"
+                android:prompt="@string/insulin_prompt_l"
+                style="@android:style/Widget.Spinner"/>
+        </LinearLayout>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+<Button
+    android:id="@+id/applyBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Apply" />
+
+    <Button
+        android:id="@+id/closBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+</LinearLayout>
+</LinearLayout>
